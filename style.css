@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* negro con transparencia */
+  backdrop-filter: blur(6px); /* efecto de vidrio */
+  padding: 12px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3); /* sombra azul elegante */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Carrusel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;       /* ocupa todo el ancho visible */
+  height: 90vh;       /* ocupa el 90% de la altura visible */
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  width: 100vw;       /* cada imagen ocupa el ancho completo de la ventana */
+  height: 100%;
+  object-fit: contain; /* recorta suavemente para que no queden espacios */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(30, 144, 255, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Ofertas */
+.ofertas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+}
+
+.ofertas h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.ofertas-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.oferta-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.oferta-card:hover {
+  transform: translateY(-5px);
+}
+
+.oferta-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.oferta-card h3 {
+  margin: 10px 0;
+  color: #000;
+}
+
+.oferta-card p {
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+.oferta-card button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.oferta-card button:hover {
+  background-color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Azul */
+  transform: scale(1.2);
+}

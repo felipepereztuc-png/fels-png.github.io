@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Balance 550 “White Green” - DripStep</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* === NAVBAR === */
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo img {
+      height: 50px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      color: #00b7ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: white;
+    }
+
+    /* === PRODUCTO === */
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 10%;
+      gap: 60px;
+    }
+
+    .product-image {
+      flex: 1;
+      min-width: 350px;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 183, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .product-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 350px;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 183, 255, 0.1);
+    }
+
+    .product-info h1 {
+      color: #00b7ff;
+      margin-bottom: 15px;
+    }
+
+    .product-info p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .product-info strong {
+      color: #fff;
+    }
+
+    .price {
+      color: #00b7ff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+
+    .sizes {
+      margin-top: 10px;
+    }
+
+    .sizes span {
+      display: inline-block;
+      background-color: #1a1a1a;
+      color: #00b7ff;
+      border: 1px solid #00b7ff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #00b7ff;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #0091cc;
+      transform: translateY(-2px);
+    }
+
+    footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: #00bfff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+
+    @media (max-width: 900px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .product-container {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .product-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="img/DripStep.png" alt="DripStep Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="produc.html">Productos</a></li>
+      <li><a href="#">Ofertas</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- PRODUCTO -->
+  <section class="product-container">
+    <div class="product-image">
+      <img src="img/Screenshot_15.png" alt="Jordan 4 Flowers">
+    </div>
+
+    <div class="product-info">
+      <h1>New Balance 550 “White Green”</h1>
+      <p><strong>Marca:</strong> New Balance</p>
+      <p><strong>Modelo:</strong>New Balance 550 “White Green” Edición Limitada</p>
+      <p class="price">$32.500</p>
+      <p><strong>Talles disponibles:</strong></p>
+      <div class="sizes">
+        <span>38</span><span>39</span><span>40</span><span>41</span><span>42</span>
+      </div>
+      <p><strong>Descripción:</strong> Inspiradas en la clásica línea Jordan, estas zapatillas combinan confort, estilo y durabilidad. Su diseño exclusivo con detalles florales las hace únicas y modernas, ideales para quienes buscan destacar.</p>
+
+      <a href="index.html" class="back-btn">Volver al inicio</a>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-content">
+    <p>© 2025 DripStep. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Feli20075" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+</footer>
+</body>
+</html
